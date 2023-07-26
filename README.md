@@ -18,6 +18,7 @@ split-normalized). Example: if the data is dated October 1st and becomes availab
 macroeconomic indicators create a training dataset.
 3.Based on the classifier labels obtained, balance curves are built in
 dataframes df_n, df_no.
+
 4. Various indicators, a graph of balances and distributions of transactions are displayed.
    
 ```
