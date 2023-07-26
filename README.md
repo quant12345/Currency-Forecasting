@@ -19,6 +19,7 @@ macroeconomic indicators create a training dataset.
 3.Based on the classifier labels obtained, balance curves are built in
 dataframes df_n, df_no.
 4. Various indicators, a graph of balances and distributions of transactions are displayed.
+   
 ```
 this is Depozit_no --- Pearson corr train 0.992 Pearson corr test 0.918
 Sharp_Ratio_train 3.45 Sharp_Ratio_test 2.54 amount of deals 960
