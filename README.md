@@ -12,14 +12,15 @@ To reproduce the code, the following libraries are needed:
 numpy, pandas, scipy, sklearn, matplotlib, seaborn, talib. You also need an include file: qnt.
 
 By code:
-1. The dataset.csv file is read, in which EURUSD daily quotes and three selected macroeconomic indicators (these are their momentums shifted by the required amount and
+1.The dataset.csv file is read, in which EURUSD daily quotes and three selected macroeconomic indicators (these are their momentums shifted by the required amount and
 split-normalized). Example: if the data is dated October 1st and becomes available on November 15th, then it is shifted by about 45 days.
-2. The price series is converted into a series of technical analysis indicators. This data+
+2.The price series is converted into a series of technical analysis indicators. This data+
 macroeconomic indicators create a training dataset.
 3.Based on the classifier labels obtained, balance curves are built in
 dataframes df_n, df_no.
 
-4. Various indicators, a graph of balances and distributions of transactions are displayed.
+4.Various indicators, a graph of balances and distributions of transactions are displayed.
+
    
 ```
 this is Depozit_no --- Pearson corr train 0.992 Pearson corr test 0.918
