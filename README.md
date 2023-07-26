@@ -20,7 +20,9 @@ macroeconomic indicators create a training dataset.
 dataframes df_n, df_no.
 4. Various indicators, a graph of balances and distributions of transactions are displayed.
 ```
-this is Depozit_no --- Pearson corr train 0.992 Pearson corr test 0.918 Sharp_Ratio_train 3.45 Sharp_Ratio_test 2.54 amount of deals 960
+this is Depozit_no --- Pearson corr train 0.992 Pearson corr test 0.918
+Sharp_Ratio_train 3.45 Sharp_Ratio_test 2.54 amount of deals 960
+
 Train               precision    recall  f1-score   support
 
            0       0.61      0.25      0.35      2807
@@ -39,7 +41,9 @@ Test               precision    recall  f1-score   support
    macro avg       0.54      0.52      0.46      2738
 weighted avg       0.54      0.52      0.46      2738
 
-this is Depozit_n --- Pearson corr train 0.994 Pearson corr test 0.981 Sharp_Ratio_train 6.15 Sharp_Ratio_test 3.27 amount of deals 1027
+this is Depozit_n --- Pearson corr train 0.994 Pearson corr test 0.981
+Sharp_Ratio_train 6.15 Sharp_Ratio_test 3.27 amount of deals 1027
+
 Train               precision    recall  f1-score   support
 
            0       0.73      0.30      0.43      2807
