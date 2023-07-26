@@ -19,6 +19,45 @@ macroeconomic indicators create a training dataset.
 3.Based on the classifier labels obtained, balance curves are built in
 dataframes df_n, df_no.
 4. Various indicators, a graph of balances and distributions of transactions are displayed.
+```
+this is Depozit_no --- Pearson corr train 0.992 Pearson corr test 0.918 Sharp_Ratio_train 3.45 Sharp_Ratio_test 2.54 amount of deals 960
+Train               precision    recall  f1-score   support
+
+           0       0.61      0.25      0.35      2807
+           1       0.54      0.84      0.66      2895
+
+    accuracy                           0.55      5702
+   macro avg       0.57      0.55      0.51      5702
+weighted avg       0.57      0.55      0.51      5702
+
+Test               precision    recall  f1-score   support
+
+           0       0.56      0.17      0.27      1355
+           1       0.52      0.87      0.65      1383
+
+    accuracy                           0.52      2738
+   macro avg       0.54      0.52      0.46      2738
+weighted avg       0.54      0.52      0.46      2738
+
+this is Depozit_n --- Pearson corr train 0.994 Pearson corr test 0.981 Sharp_Ratio_train 6.15 Sharp_Ratio_test 3.27 amount of deals 1027
+Train               precision    recall  f1-score   support
+
+           0       0.73      0.30      0.43      2807
+           1       0.57      0.89      0.70      2895
+
+    accuracy                           0.60      5702
+   macro avg       0.65      0.60      0.56      5702
+weighted avg       0.65      0.60      0.56      5702
+
+Test               precision    recall  f1-score   support
+
+           0       0.52      0.44      0.48      1355
+           1       0.53      0.61      0.56      1383
+
+    accuracy                           0.52      2738
+   macro avg       0.52      0.52      0.52      2738
+weighted avg       0.52      0.52      0.52      2738
+```
 
 ![distribution of deals](https://github.com/quant12345/Currency-Forecasting/blob/main/distribution.jpg)
 ```
@@ -65,3 +104,5 @@ z_csore : 0.29180281268336133 p value : 0.3852186972909527
 amount of loss no_ -0.49 amount of profits no_ 0.77 attitude no 1.571 amount of loss n_ -0.597 amount of profits n_ 1.096 attitude n 1.836
 arr_n_ > 0  amount 162 arr_n_ < 0 amount 100 arr_no_ > 0 amount 169 arr_no_ < 0 amount 99
 ```
+But, if we calculate the amount of losses, the amount of profits and their ratio, then we see
+There is a difference and it is noticeable. Which is further confirmed by the best Sharp Ratio and coefficient Pearson correlations. Based on this, I assume that the model with additional data chose more those labels where there were more profits, even taking into account the fact that its accuracy is slightly less than other models. The search for the best parameters was carried out by coefficient Pearson correlations.
