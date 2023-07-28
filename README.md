@@ -114,4 +114,4 @@ amount of loss no_ -0.49 amount of profits no_ 0.77 attitude no 1.571 amount of 
 arr_n_ > 0  amount 162 arr_n_ < 0 amount 100 arr_no_ > 0 amount 169 arr_no_ < 0 amount 99
 ```
 But, if we calculate the amount of losses, the amount of profits and their ratio, then we see
-There is a difference and it is noticeable. Which is further confirmed by the best Sharp Ratio and coefficient Pearson correlations. Based on this, I assume that the model with additional data chose more those labels where there were more profits, even taking into account the fact that its accuracy is slightly less than other models. The search for the best parameters was carried out by coefficient Pearson correlations.
+There is a difference and it is noticeable. Which is further confirmed by the best Sharp Ratio and coefficient Pearson correlations. Based on this, I assume that the model with additional data chose more those labels where there were more profits, even taking into account the fact that its precision is slightly less than other models. The search for the best parameters was carried out by coefficient Pearson correlations.
